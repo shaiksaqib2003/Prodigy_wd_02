@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stopwatch</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  
+  <div class="container">
+    <h1>Stopwatch</h1>
+    <div class="stopwatch-container">
+    <div class="stopwatch watch-box">
+      <div class="analog-stopwatch">
+        <div class="dial">
+          <div class="hand hours"></div>
+          <div class="hand minutes"></div>
+          <div class="hand seconds"></div>
+          <div class="numbers">
+            <span class="number" style="top: 10px; left: 50%; transform: translateX(-50%);">12</span>
+            <span class="number" style="top: 50%; right: 10px; transform: translateY(-50%);">3</span>
+            <span class="number" style="bottom: 10px; left: 50%; transform: translateX(-50%);">6</span>
+            <span class="number" style="top: 50%; left: 10px; transform: translateY(-50%);">9</span>
+          </div>
+        </div>
+      </div>
+      <div class="digital">
+        <span class="minutes">00</span>:<span class="seconds">00</span>:<span class="milliseconds">000</span>
+      </div>
+      <div class="buttons">
+        <button class="start">Start</button>
+        <button class="stop">Stop</button>
+        <button class="reset">Reset</button>
+        <button class="lap">Lap</button>
+      </div>
+    </div>
+    
+    <div class="laps">
+      <h2>Laps</h2>
+      <ul class="lap-list"></ul>
+    </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
